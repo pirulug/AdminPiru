@@ -1,0 +1,85 @@
+// .btn {
+//   z-index : 1;
+//   overflow: hidden;
+//   position: relative;
+
+//   &::before {
+//     content      : "";
+//     position     : absolute;
+//     top          : 50%;
+//     left         : 50%;
+//     width        : 0;
+//     height       : 0;
+//     padding      : 50%;
+//     border-radius: 50%;
+//     margin       : auto;
+//     background   : rgba(0, 0, 0, 0.1);
+//     z-index      : -1;
+//     transition   : all 0.4s linear;
+//     transform    : translate3d(-50%, -50%, 0) scale(0);
+//   }
+
+//   &:hover {
+//     &::before {
+//       transform: translate3d(-50%, -50%, 0) scale(1.5);
+//     }
+//   }
+
+//   &.border-button {
+//     background  : transparent;
+//     color       : $primary;
+//     border-color: $primary;
+
+//     &::before {
+//       background: rgba($primary, 0.16);
+//     }
+//   }
+// }
+
+.btn-circle {
+  border-radius  : 100%;
+  height         : 2.5rem;
+  width          : 2.5rem;
+  font-size      : 1rem;
+  display        : inline-flex;
+  align-items    : center;
+  justify-content: center;
+}
+
+// Variants buttons
+// @each $color, $value in $theme-colors {
+//   .btn-#{$color} {
+//     @include button-variant($value, $value);
+//   }
+// }
+
+// Variants buttons outline
+// @each $color,
+// $value in $theme-colors {
+//   .btn-outline-#{$color} {
+//     // @include button-outline-variant($value);
+//     @include piru-btn-outline($value);
+//   }
+// }
+
+// Social Variants buttons
+@each $color,
+$value in $social-colors {
+  .btn-#{$color} {
+    @include button-variant($value, $value);
+  }
+}
+
+// Social Variants buttons outline
+@each $color,
+$value in $social-colors {
+  .btn-outline-#{$color} {
+    @include button-outline-variant($value);
+    @include piru-btn-outline($value);
+  }
+}
+
+.btn .feather {
+  width : 14px;
+  height: 14px;
+}

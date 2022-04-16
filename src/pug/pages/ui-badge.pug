@@ -1,0 +1,82 @@
+extends ../includes/layout
+
+append config
+  -pageName = 'Icons'
+
+block content	
+
+  .card.mb-3
+    .card-header 
+      h5.card-title.m-0 Headings
+    .card-body 
+      h1
+        | Example heading 
+        span.badge.bg-secondary New
+      h2
+        | Example heading 
+        span.badge.bg-secondary New
+      h3
+        | Example heading 
+        span.badge.bg-secondary New
+      h4
+        | Example heading 
+        span.badge.bg-secondary New
+      h5
+        | Example heading 
+        span.badge.bg-secondary New
+      h6
+        | Example heading 
+        span.badge.bg-secondary New
+
+  .card.mb-3
+    .card-header 
+      h5.card-title.m-0 Buttons
+    .card-body
+      button.btn.btn-primary(type='button')
+        | Notifications 
+        span.badge.bg-secondary 4
+      br
+      br
+      button.btn.btn-primary.position-relative(type='button')
+        | Inbox
+        span.position-absolute.top-0.start-100.translate-middle.badge.rounded-pill.bg-danger
+          | 99+
+          span.visually-hidden unread messages
+      br
+      br
+      button.btn.btn-primary.position-relative(type='button')
+        | Profile
+        span.position-absolute.top-0.start-100.translate-middle.p-2.bg-danger.border.border-light.rounded-circle
+          span.visually-hidden New alerts
+
+  .card.mb-3
+    .card-header 
+      h5.card-title.m-0 Positioned
+    .card-body
+      span.badge.bg-primary Primary
+      span.badge.bg-secondary Secondary
+      span.badge.bg-success Success
+      span.badge.bg-danger Danger
+      span.badge.bg-warning.text-dark Warning
+      span.badge.bg-info.text-dark Info
+      span.badge.bg-light.text-dark Light
+      span.badge.bg-dark Dark
+      br
+      span.badge.rounded-pill.bg-primary Primary
+      span.badge.rounded-pill.bg-secondary Secondary
+      span.badge.rounded-pill.bg-success Success
+      span.badge.rounded-pill.bg-danger Danger
+      span.badge.rounded-pill.bg-warning.text-dark Warning
+      span.badge.rounded-pill.bg-info.text-dark Info
+      span.badge.rounded-pill.bg-light.text-dark Light
+      span.badge.rounded-pill.bg-dark Dark
+
+  //-.card
+    .card-header 
+      h5.card-title.m-0 Headings
+    .card-body
+
+
+
+
+

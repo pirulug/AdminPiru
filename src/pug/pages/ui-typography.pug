@@ -1,0 +1,85 @@
+extends ../includes/layout
+
+append config
+  -pageName = 'Typography'
+
+block content
+  .card.mb-3
+    .card-header
+      h5.card-title Display
+      h6.card-subtitle.text-muted 
+        a(href="https://getbootstrap.com/docs/5.1/content/typography/#display-headings", target="_blanck") Document 
+    .card-body
+      p.display-1 Display 1
+      p.display-2 Display 2
+      p.display-3 Display 3
+      p.display-4 Display 4
+      p.display-5 Display 5
+      p.display-6 Display 6
+
+  .card.mb-3
+    .card-header
+      h5.card-title.m-0 Heading
+      h6.card-subtitle.text-muted 
+    .card-body
+      p.h1 Heading 1
+      p.h2 Heading 2
+      p.h3 Heading 3
+      p.h4 Heading 4
+      p.h5 Heading 5
+      p.h6 Heading 6
+  
+  .card.mb-3
+    .card-header
+      h5.card-title.m-0 Paragraph
+      h6.card-subtitle.text-muted 
+    .card-body
+      .mb-3
+        p.lead
+          | This is a lead paragraph. It stands out from regular paragraphs.
+      .mb-3
+        p
+          | You can use the mark tag to 
+          mark highlight
+          |  text.
+        p
+          del This line of text is meant to be treated as deleted text.
+        p
+          s This line of text is meant to be treated as no longer accurate.
+        p
+          ins This line of text is meant to be treated as an addition to the document.
+        p
+          u This line of text will render as underlined.
+        p
+          small This line of text is meant to be treated as fine print.
+        p
+          strong This line rendered as bold text.
+        p
+          em This line rendered as italicized text.
+      .mb-3
+        blockquote.blockquote
+          p A well-known quote, contained in a blockquote element.
+          footer.blockquote-footer
+            | Someone famous in 
+            cite(title='Source Title') Source Title
+      .mb-3
+        ul.list-unstyled
+          li This is a list.
+          li It appears completely unstyled.
+          li Structurally, it&apos;s still a list.
+          li However, this style only applies to immediate child elements.
+          li
+            | Nested lists:
+            ul
+              li are unaffected by this style
+              li will still show a bullet
+              li and have appropriate left margin
+          li This may still come in handy in some situations.
+      .mb-3
+        ul.list-inline
+          li.list-inline-item This is a list item.
+          li.list-inline-item And another one.
+          li.list-inline-item But they&apos;re displayed inline.
+    
+      
+

@@ -1,0 +1,26 @@
+extends ../includes/auth-layout
+
+append config
+  -pageName = '400'
+
+block content
+
+  .container.d-flex.flex-column
+    .row.vh-100
+      .col-sm-10.col-md-8.col-lg-6.mx-auto.d-table.h-100
+        .d-table-cell.align-middle
+
+          .text-center
+            h1.display-1.font-weight-bold.text-warning 404
+            p.h1 
+              i.fa.fa-exclamation-triangle.text-warning.me-2
+              | Oops! Page not found.
+            p
+              | We could not find the page you were looking for. Meanwhile, you may return to dashboard or try using the search form.
+            form.search-form
+              .input-group
+                input.form-control(type='text' name='search' placeholder='Search')
+                .input-group-append
+                  button.btn.btn-warning(type='submit' name='submit')
+                    i.fa.fa-search
+            a.btn.btn-warning.btn-lg.my-2(href='index.html') Return to website

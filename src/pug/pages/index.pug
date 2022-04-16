@@ -1,0 +1,399 @@
+extends ../includes/layout
+
+append config
+  -pageName = 'Dashboard'
+
+block content
+
+  .row
+    .col-xl-6.col-xxl-5.d-flex
+      .w-100
+        .row
+          .col-sm-6
+            .card.mb-3
+              .card-body
+                .row
+                  .col.mt-0
+                    h5.card-title Sales
+                  .col-auto
+                    .stat.text-primary
+                      i.align-middle(data-feather='truck')
+                h1.mt-1.mb-3 2.382
+                .mb-0
+                  span.text-danger
+                    i.mdi.mdi-arrow-bottom-right
+                    |  -3.65%
+                  span.text-muted Since last week
+            .card.mb-3
+              .card-body
+                .row
+                  .col.mt-0
+                    h5.card-title Visitors
+                  .col-auto
+                    .stat.text-primary
+                      i.align-middle(data-feather='users')
+                h1.mt-1.mb-3 14.212
+                .mb-0
+                  span.text-success
+                    i.mdi.mdi-arrow-bottom-right
+                    |  5.25%
+                  span.text-muted Since last week
+          .col-sm-6
+            .card.mb-3
+              .card-body
+                .row
+                  .col.mt-0
+                    h5.card-title Earnings
+                  .col-auto
+                    .stat.text-primary
+                      i.align-middle(data-feather='dollar-sign')
+                h1.mt-1.mb-3 $21.300
+                .mb-0
+                  span.text-success
+                    i.mdi.mdi-arrow-bottom-right
+                    |  6.65%
+                  span.text-muted Since last week
+            .card.mb-3
+              .card-body
+                .row
+                  .col.mt-0
+                    h5.card-title Orders
+                  .col-auto
+                    .stat.text-primary
+                      i.align-middle(data-feather='shopping-cart')
+                h1.mt-1.mb-3 64
+                .mb-0
+                  span.text-danger
+                    i.mdi.mdi-arrow-bottom-right
+                    |  -2.25%
+                  span.text-muted Since last week
+    .col-xl-6.col-xxl-7
+      .card.mb-3.flex-fill.w-100
+        .card-header
+          h5.card-title.mb-0 Recent Movement
+        .card-body.py-3
+          canvas#chartjs-dashboard-line
+  .row
+    .col-12.col-md-6.col-xxl-3.d-flex.order-2.order-xxl-3
+      .card.mb-3.flex-fill.w-100
+        .card-header
+          h5.card-title.mb-0 Browser Usage
+        .card-body.d-flex
+          .align-self-center.w-100
+            .py-3
+              .chart.chart-xs
+                canvas#chartjs-dashboard-pie
+            table.table.mb-0
+              tbody
+                tr
+                  td Chrome
+                  td.text-end 4306
+                tr
+                  td Firefox
+                  td.text-end 3801
+                tr
+                  td IE
+                  td.text-end 1689
+    .col-12.col-md-12.col-xxl-6.d-flex.order-3.order-xxl-2
+      .card.mb-3.flex-fill.w-100
+        .card-header
+          h5.card-title.mb-0 Real-Time
+        .card-body.px-4
+          #world_map(style='height:350px;')
+    .col-12.col-md-6.col-xxl-3.d-flex.order-1.order-xxl-1
+      .card.mb-3.flex-fill
+        .card-header
+          h5.card-title.mb-0 Calendar
+        .card-body
+          .chart
+            #datetimepicker-dashboard
+  .row
+    .col-12.col-lg-8.col-xxl-9.d-flex
+      .card.flex-fill
+        .card-header
+          h5.card-title.mb-0 Latest Projects
+        table.table.table-hover.my-0
+          thead
+            tr
+              th Name
+              th.d-none.d-xl-table-cell Start Date
+              th.d-none.d-xl-table-cell End Date
+              th Status
+              th.d-none.d-md-table-cell Assignee
+          tbody
+            tr
+              td Project Apollo
+              td.d-none.d-xl-table-cell 01/01/2021
+              td.d-none.d-xl-table-cell 31/06/2021
+              td
+                span.badge.bg-success Done
+              td.d-none.d-md-table-cell Vanessa Tucker
+            tr
+              td Project Fireball
+              td.d-none.d-xl-table-cell 01/01/2021
+              td.d-none.d-xl-table-cell 31/06/2021
+              td
+                span.badge.bg-danger Cancelled
+              td.d-none.d-md-table-cell William Harris
+            tr
+              td Project Hades
+              td.d-none.d-xl-table-cell 01/01/2021
+              td.d-none.d-xl-table-cell 31/06/2021
+              td
+                span.badge.bg-success Done
+              td.d-none.d-md-table-cell Sharon Lessman
+            tr
+              td Project Nitro
+              td.d-none.d-xl-table-cell 01/01/2021
+              td.d-none.d-xl-table-cell 31/06/2021
+              td
+                span.badge.bg-warning In progress
+              td.d-none.d-md-table-cell Vanessa Tucker
+            tr
+              td Project Phoenix
+              td.d-none.d-xl-table-cell 01/01/2021
+              td.d-none.d-xl-table-cell 31/06/2021
+              td
+                span.badge.bg-success Done
+              td.d-none.d-md-table-cell William Harris
+            tr
+              td Project X
+              td.d-none.d-xl-table-cell 01/01/2021
+              td.d-none.d-xl-table-cell 31/06/2021
+              td
+                span.badge.bg-success Done
+              td.d-none.d-md-table-cell Sharon Lessman
+            tr
+              td Project Romeo
+              td.d-none.d-xl-table-cell 01/01/2021
+              td.d-none.d-xl-table-cell 31/06/2021
+              td
+                span.badge.bg-success Done
+              td.d-none.d-md-table-cell Christina Mason
+            tr
+              td Project Wombat
+              td.d-none.d-xl-table-cell 01/01/2021
+              td.d-none.d-xl-table-cell 31/06/2021
+              td
+                span.badge.bg-warning In progress
+              td.d-none.d-md-table-cell William Harris
+    .col-12.col-lg-4.col-xxl-3.d-flex
+      .card.flex-fill.w-100
+        .card-header
+          h5.card-title.mb-0 Monthly Sales
+        .card-body
+          canvas#chartjs-dashboard-bar
+
+block scripts 
+
+  script.
+    // Pie chart
+    new Chart(document.getElementById("chartjs-dashboard-pie"), {
+      type: "pie",
+      data: {
+        labels: ["Chrome", "Firefox", "IE"],
+        datasets: [{
+          data: [4306, 3801, 1689],
+          backgroundColor: [
+            window.theme.primary,
+            window.theme.warning,
+            window.theme.danger
+          ],
+          borderWidth: 5
+        }]
+      },
+      options: {
+        responsive: !window.MSInputMethodContext,
+        maintainAspectRatio: false,
+        legend: {
+          display: false
+        },
+        cutoutPercentage: 75
+      }
+    });
+
+    const ctx2 = document.getElementById("chartjs-dashboard-line").getContext("2d");
+    const gradient = ctx2.createLinearGradient(0, 0, 0, 225);
+    gradient.addColorStop(0, "rgba(215, 227, 244, 1)");
+    gradient.addColorStop(1, "rgba(215, 227, 244, 0)");
+    // Line chart
+    new Chart(document.getElementById("chartjs-dashboard-line"), {
+      type: "line",
+      data: {
+        labels: ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"],
+        datasets: [{
+          label: "Sales ($)",
+          fill: true,
+          backgroundColor: gradient,
+          borderColor: window.theme.primary,
+          data: [
+            2115,
+            1562,
+            1584,
+            1892,
+            1587,
+            1923,
+            2566,
+            2448,
+            2805,
+            3438,
+            2917,
+            3327
+          ]
+        }]
+      },
+      options: {
+        maintainAspectRatio: false,
+        legend: {
+          display: false
+        },
+        tooltips: {
+          intersect: false
+        },
+        hover: {
+          intersect: true
+        },
+        plugins: {
+          filler: {
+            propagate: false
+          }
+        },
+        scales: {
+          xAxes: [{
+            reverse: true,
+            gridLines: {
+              color: "rgba(0,0,0,0.0)"
+            }
+          }],
+          yAxes: [{
+            ticks: {
+              stepSize: 1000
+            },
+            display: true,
+            borderDash: [3, 3],
+            gridLines: {
+              color: "rgba(0,0,0,0.0)"
+            }
+          }]
+        }
+      }
+    });
+
+    // Bar chart
+    new Chart(document.getElementById("chartjs-dashboard-bar"), {
+      type: "bar",
+      data: {
+        labels: ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"],
+        datasets: [{
+          label: "This year",
+          backgroundColor: window.theme.primary,
+          borderColor: window.theme.primary,
+          hoverBackgroundColor: window.theme.primary,
+          hoverBorderColor: window.theme.primary,
+          data: [54, 67, 41, 55, 62, 45, 55, 73, 60, 76, 48, 79],
+          barPercentage: .75,
+          categoryPercentage: .5
+        }]
+      },
+      options: {
+        maintainAspectRatio: false,
+        legend: {
+          display: false
+        },
+        scales: {
+          yAxes: [{
+            gridLines: {
+              display: false
+            },
+            stacked: false,
+            ticks: {
+              stepSize: 20
+            }
+          }],
+          xAxes: [{
+            stacked: false,
+            gridLines: {
+              color: "transparent"
+            }
+          }]
+        }
+      }
+    });
+
+    // Map
+    var markers = [{
+        coords: [31.230391, 121.473701],
+        name: "Shanghai"
+      },
+      {
+        coords: [28.704060, 77.102493],
+        name: "Delhi"
+      },
+      {
+        coords: [6.524379, 3.379206],
+        name: "Lagos"
+      },
+      {
+        coords: [35.689487, 139.691711],
+        name: "Tokyo"
+      },
+      {
+        coords: [23.129110, 113.264381],
+        name: "Guangzhou"
+      },
+      {
+        coords: [40.7127837, -74.0059413],
+        name: "New York"
+      },
+      {
+        coords: [34.052235, -118.243683],
+        name: "Los Angeles"
+      },
+      {
+        coords: [41.878113, -87.629799],
+        name: "Chicago"
+      },
+      {
+        coords: [51.507351, -0.127758],
+        name: "London"
+      },
+      {
+        coords: [40.416775, -3.703790],
+        name: "Madrid "
+      }
+    ];
+
+    // Maps
+    var map = new jsVectorMap({
+    map: "world",
+    selector: "#world_map",
+    zoomButtons: true,
+    markers: markers,
+    markerStyle: {
+        initial: {
+          r: 9,
+          strokeWidth: 7,
+          stokeOpacity: .4,
+          fill: window.theme.primary
+        },
+        hover: {
+          fill: window.theme.primary,
+          stroke: window.theme.primary
+        }
+      },
+      zoomOnScroll: false
+    });
+    window.addEventListener("resize", () => {
+      map.updateSize();
+    });  
+
+    // Calendar
+    var date = new Date(Date.now() - 5 * 24 * 60 * 60 * 1000);
+    var defaultDate = date.getUTCFullYear() + "-" + (date.getUTCMonth() + 1) + "-" + date.getUTCDate();
+    
+    document.getElementById("datetimepicker-dashboard").flatpickr({
+      inline: true,
+      prevArrow: "<span title=\"Previous month\">&laquo;</span>",
+      nextArrow: "<span title=\"Next month\">&raquo;</span>",
+      defaultDate: defaultDate
+    });

@@ -1,0 +1,82 @@
+extends ../includes/layout
+
+append config
+  -pageName = 'Acordion'
+
+block content
+
+  .card.mb-3
+    .card-header
+      h5.card-title Ejemplo
+      h6.card-subtitle.text-muted Haga clic en los acordeones a continuación para expandir/contraer el contenido del acordeón.
+    .card-body
+      #accordionExample.accordion
+        .accordion-item
+          h2#headingOne.accordion-header
+            button.accordion-button(type='button' data-bs-toggle='collapse' data-bs-target='#collapseOne' aria-expanded='true' aria-controls='collapseOne')
+              | Accordion Item #1
+          #collapseOne.accordion-collapse.collapse.show(aria-labelledby='headingOne' data-bs-parent='#accordionExample')
+            .accordion-body
+              strong This is the first item&apos;s accordion body.
+              |  It is shown by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It&apos;s also worth noting that just about any HTML can go within the 
+              code .accordion-body
+              | , though the transition does limit overflow.
+        .accordion-item
+          h2#headingTwo.accordion-header
+            button.accordion-button.collapsed(type='button' data-bs-toggle='collapse' data-bs-target='#collapseTwo' aria-expanded='false' aria-controls='collapseTwo')
+              | Accordion Item #2
+          #collapseTwo.accordion-collapse.collapse(aria-labelledby='headingTwo' data-bs-parent='#accordionExample')
+            .accordion-body
+              strong This is the second item&apos;s accordion body.
+              |  It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It&apos;s also worth noting that just about any HTML can go within the 
+              code .accordion-body
+              | , though the transition does limit overflow.
+        .accordion-item
+          h2#headingThree.accordion-header
+            button.accordion-button.collapsed(type='button' data-bs-toggle='collapse' data-bs-target='#collapseThree' aria-expanded='false' aria-controls='collapseThree')
+              | Accordion Item #3
+          #collapseThree.accordion-collapse.collapse(aria-labelledby='headingThree' data-bs-parent='#accordionExample')
+            .accordion-body
+              strong This is the third item&apos;s accordion body.
+              |  It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It&apos;s also worth noting that just about any HTML can go within the 
+              code .accordion-body
+              | , though the transition does limit overflow.
+  .card.mb-3
+    .card-header 
+      h5.card-title Flush
+      h6.card-subtitle.text-muted Add 
+        code .accordion-flush 
+        | to remove the default 
+        code background-color
+        |, some borders, and some rounded corners to render accordions edge-to-edge with their parent container.
+    .card-body
+      #accordionFlushExample.accordion.accordion-flush
+        .accordion-item
+          h2#flush-headingOne.accordion-header
+            button.accordion-button.collapsed(type='button' data-bs-toggle='collapse' data-bs-target='#flush-collapseOne' aria-expanded='false' aria-controls='flush-collapseOne')
+              | Accordion Item #1
+          #flush-collapseOne.accordion-collapse.collapse(aria-labelledby='flush-headingOne' data-bs-parent='#accordionFlushExample')
+            .accordion-body
+              | Placeholder content for this accordion, which is intended to demonstrate the 
+              code .accordion-flush
+              |  class. This is the first item&apos;s accordion body.
+        .accordion-item
+          h2#flush-headingTwo.accordion-header
+            button.accordion-button.collapsed(type='button' data-bs-toggle='collapse' data-bs-target='#flush-collapseTwo' aria-expanded='false' aria-controls='flush-collapseTwo')
+              | Accordion Item #2
+          #flush-collapseTwo.accordion-collapse.collapse(aria-labelledby='flush-headingTwo' data-bs-parent='#accordionFlushExample')
+            .accordion-body
+              | Placeholder content for this accordion, which is intended to demonstrate the 
+              code .accordion-flush
+              |  class. This is the second item&apos;s accordion body. Let&apos;s imagine this being filled with some actual content.
+        .accordion-item
+          h2#flush-headingThree.accordion-header
+            button.accordion-button.collapsed(type='button' data-bs-toggle='collapse' data-bs-target='#flush-collapseThree' aria-expanded='false' aria-controls='flush-collapseThree')
+              | Accordion Item #3
+          #flush-collapseThree.accordion-collapse.collapse(aria-labelledby='flush-headingThree' data-bs-parent='#accordionFlushExample')
+            .accordion-body
+              | Placeholder content for this accordion, which is intended to demonstrate the 
+              code .accordion-flush
+              |  class. This is the third item&apos;s accordion body. Nothing more exciting happening here in terms of content, but just filling up the space to make it look, at least at first glance, a bit more representative of how this would look in a real-world application.
+
+
