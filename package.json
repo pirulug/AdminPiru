@@ -1,7 +1,7 @@
 {
-  "name": "piruadmin",
+  "name": "adminpiru",
   "version": "0.0.1",
-  "description": "PiruAdmin - Bootstrap 5 Admin Template",
+  "description": "AdminPiru - Bootstrap 5 Admin Template",
   "keywords": [
     "bootstrap",
     "bootstrap 5",
@@ -30,7 +30,7 @@
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/pirulug/PiruAdmin.git"
+    "url": "git+https://github.com/pirulug/AdminPiru.git"
   },
   "devDependencies": {
     "@babel/core": "7.17.9",
