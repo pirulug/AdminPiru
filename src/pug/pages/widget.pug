@@ -1,0 +1,259 @@
+extends ../includes/layout
+
+append config
+  -pageName = 'Widget'
+
+block content
+
+  .card.mb-3
+    .card-header
+      h5.card-title.m-0 Info Box
+    .card-body 
+      .row
+        .col-md-3.col-sm-6.col-12
+          .info-box
+            span.info-box-icon.bg-info
+              i.far.fa-envelope
+            .info-box-content
+              span.info-box-text Messages
+              span.info-box-number 1,410
+        .col-md-3.col-sm-6.col-12
+          .info-box
+            span.info-box-icon.bg-success
+              i.far.fa-flag
+            .info-box-content
+              span.info-box-text Bookmarks
+              span.info-box-number 410
+        .col-md-3.col-sm-6.col-12
+          .info-box
+            span.info-box-icon.bg-warning
+              i.far.fa-copy
+            .info-box-content
+              span.info-box-text Uploads
+              span.info-box-number 13,648
+        .col-md-3.col-sm-6.col-12
+          .info-box
+            span.info-box-icon.bg-danger
+              i.far.fa-star
+            .info-box-content
+              span.info-box-text Likes
+              span.info-box-number 93,139
+
+  .card.mb-3
+    .card-header
+      h5.card-title.m-0
+        | Info Box With Custom Shadows 
+    .card-body 
+      .row
+        .col-md-3.col-sm-6.col-12
+          .info-box.shadow-none
+            span.info-box-icon.bg-info
+              i.far.fa-envelope
+            .info-box-content
+              span.info-box-text Shadows
+              span.info-box-number None
+        .col-md-3.col-sm-6.col-12
+          .info-box.shadow-sm
+            span.info-box-icon.bg-success
+              i.far.fa-flag
+            .info-box-content
+              span.info-box-text Shadows
+              span.info-box-number Small
+        .col-md-3.col-sm-6.col-12
+          .info-box.shadow
+            span.info-box-icon.bg-warning
+              i.far.fa-copy
+            .info-box-content
+              span.info-box-text Shadows
+              span.info-box-number Regular
+        .col-md-3.col-sm-6.col-12
+          .info-box.shadow-lg
+            span.info-box-icon.bg-danger
+              i.far.fa-star
+            .info-box-content
+              span.info-box-text Shadows
+              span.info-box-number Large
+
+  .card.mb-3
+    .card-header
+      h5.card-title.m-0 Info Box With 
+        code bg-*
+    .card-body
+      .row
+        .col-md-3.col-sm-6.col-12
+          .info-box.bg-info
+            span.info-box-icon
+              i.far.fa-bookmark
+            .info-box-content
+              span.info-box-text Bookmarks
+              span.info-box-number 41,410
+              .progress
+                .progress-bar(style='width: 70%')
+              span.progress-description
+                | 70% Increase in 30 Days
+        .col-md-3.col-sm-6.col-12
+          .info-box.bg-success
+            span.info-box-icon
+              i.far.fa-thumbs-up
+            .info-box-content
+              span.info-box-text Likes
+              span.info-box-number 41,410
+              .progress
+                .progress-bar(style='width: 70%')
+              span.progress-description
+                | 70% Increase in 30 Days
+        .col-md-3.col-sm-6.col-12
+          .info-box.bg-warning
+            span.info-box-icon
+              i.far.fa-calendar-alt
+            .info-box-content
+              span.info-box-text Events
+              span.info-box-number 41,410
+              .progress
+                .progress-bar(style='width: 70%')
+              span.progress-description
+                | 70% Increase in 30 Days
+        .col-md-3.col-sm-6.col-12
+          .info-box.bg-danger
+            span.info-box-icon
+              i.fas.fa-comments
+            .info-box-content
+              span.info-box-text Comments
+              span.info-box-number 41,410
+              .progress
+                .progress-bar(style='width: 70%')
+              span.progress-description
+                | 70% Increase in 30 Days
+ 
+  .card.mb-3
+    .card-header 
+      h5.card-title.m-0 Info Box With 
+        code bg-gradient-*
+    .card-body
+      .row
+        .col-md-3.col-sm-6.col-12
+          .info-box.bg-gradient-info
+            span.info-box-icon
+              i.far.fa-bookmark
+            .info-box-content
+              span.info-box-text Bookmarks
+              span.info-box-number 41,410
+              .progress
+                .progress-bar(style='width: 70%')
+              span.progress-description
+                | 70% Increase in 30 Days
+        .col-md-3.col-sm-6.col-12
+          .info-box.bg-gradient-success
+            span.info-box-icon
+              i.far.fa-thumbs-up
+            .info-box-content
+              span.info-box-text Likes
+              span.info-box-number 41,410
+              .progress
+                .progress-bar(style='width: 70%')
+              span.progress-description
+                | 70% Increase in 30 Days
+        .col-md-3.col-sm-6.col-12
+          .info-box.bg-gradient-warning
+            span.info-box-icon
+              i.far.fa-calendar-alt
+            .info-box-content
+              span.info-box-text Events
+              span.info-box-number 41,410
+              .progress
+                .progress-bar(style='width: 70%')
+              span.progress-description
+                | 70% Increase in 30 Days
+        .col-md-3.col-sm-6.col-12
+          .info-box.bg-gradient-danger
+            span.info-box-icon
+              i.fas.fa-comments
+            .info-box-content
+              span.info-box-text Comments
+              span.info-box-number 41,410
+              .progress
+                .progress-bar(style='width: 70%')
+              span.progress-description
+                | 70% Increase in 30 Days
+
+  .card.mb-3
+    .card-header 
+      h5.card-title.m-0 Small Box 
+    .card-body
+      .row
+        .col-lg-3.col-6
+          .small-box.bg-info
+            .inner
+              h3 150
+              p New Orders
+            .icon
+              i.fas.fa-shopping-cart
+            a.small-box-footer(href='#')
+              | More info 
+              i.fas.fa-arrow-circle-right
+        .col-lg-3.col-6
+          .small-box.bg-success
+            .inner
+              h3
+                | 53
+                sup(style='font-size: 20px') %
+              p Bounce Rate
+            .icon
+              i.fa.fa-home
+            a.small-box-footer(href='#')
+              | More info 
+              i.fas.fa-arrow-circle-right
+        .col-lg-3.col-6
+          .small-box.bg-warning
+            .inner
+              h3 44
+              p User Registrations
+            .icon
+              i.fas.fa-user-plus
+            a.small-box-footer(href='#')
+              | More info 
+              i.fas.fa-arrow-circle-right
+        .col-lg-3.col-6
+          .small-box.bg-danger
+            .inner
+              h3 65
+              p Unique Visitors
+            .icon
+              i.fas.fa-chart-pie
+            a.small-box-footer(href='#')
+              | More info 
+              i.fas.fa-arrow-circle-right
+      .row
+        .col-lg-3.col-6
+          .small-box.bg-info
+            .overlay
+              i.fas.fa-3x.fa-sync-alt
+            .inner
+              h3 150
+              p New Orders
+            .icon
+              i.fas.fa-shopping-cart
+            a.small-box-footer(href='#')
+              | More info 
+              i.fas.fa-arrow-circle-right
+        .col-lg-3.col-6
+          .small-box.bg-success
+            .overlay.dark
+              i.fas.fa-3x.fa-sync-alt
+            .inner
+              h3
+                | 53
+                sup(style='font-size: 20px') %
+              p Bounce Rate
+            .icon
+              i.fa.fa-home
+            a.small-box-footer(href='#')
+              | More info 
+              i.fas.fa-arrow-circle-right
+
+
+
+
+
+
+block scripts 
