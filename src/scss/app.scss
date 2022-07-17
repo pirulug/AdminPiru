@@ -1,6 +1,7 @@
 // Config
 @import "config/functions";
 @import "config/variables";
+@import "config/variables-alt";
 @import "config/mixins";
 
 // Base
@@ -24,16 +25,16 @@
 // Components
 @import "components/alert";
 @import "components/avatar";
+@import "components/forms";
 @import "components/feather";
 @import "components/buttons";
 @import "components/card";
 @import "components/info-box";
 @import "components/small-box";
+@import "components/table";
 @import "components/stat";
 
-// Themes
-@import "themes/dark";
-@import "themes/light";
+
 
 // Hacks
 @import "hacks/hack";

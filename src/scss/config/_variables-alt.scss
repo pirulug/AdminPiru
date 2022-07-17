@@ -1,0 +1,185 @@
+//
+// Core: Variables for Dark Mode
+//
+
+// COLORS
+// --------------------------------------------------------
+
+
+// Below colors from bootwatch darkly
+$blue-alt: lighten($blue, 20%) !default;
+$indigo-alt: lighten($indigo, 20%) !default;
+$purple-alt: lighten($purple, 20%) !default;
+$pink-alt: lighten($pink, 20%) !default;
+$red-alt: lighten($red, 20%) !default;
+$orange-alt: lighten($orange, 20%) !default;
+$yellow-alt: lighten($yellow, 20%) !default;
+$green-alt: lighten($green, 20%) !default;
+$teal-alt: lighten($teal, 20%) !default;
+$cyan-alt: lighten($cyan, 20%) !default;
+
+$colors-alt: (
+  "blue": $blue-alt,
+  "indigo": $indigo-alt,
+  "purple": $purple-alt,
+  "pink": $pink-alt,
+  "red": $red-alt,
+  "orange": $orange-alt,
+  "yellow": $yellow-alt,
+  "green": $green-alt,
+  "teal": $teal-alt,
+  "cyan": $cyan-alt,
+  "white": $white,
+  "gray": $gray-600,
+  "gray-dark": $gray-800) !default;
+
+$primary-alt : lighten($pink, 20%) !default;
+$secondary-alt: lighten($gray-800, 5%) !default;
+$success-alt : lighten($green, 20%) !default;
+$info-alt : lighten($cyan, 20%) !default;
+$warning-alt : lighten($yellow, 20%) !default;
+$danger-alt : lighten($red, 20%) !default;
+$light-alt : lighten($gray-100, 20%) !default;
+$dark-alt : lighten($gray-800, 20%) !default;
+
+$theme-colors-alt: (
+  "primary": $primary-alt,
+  "secondary": $secondary-alt,
+  "success": $success-alt,
+  "info": $info-alt,
+  "warning": $warning-alt,
+  "danger": $danger-alt,
+  "light": $light-alt,
+  "dark": $dark-alt,
+  ) !default;
+
+// Body
+$body-bg-alt : $black  !default;
+$body-color-alt : $white  !default;
+
+// Utilities maps
+
+// Links
+
+// Paragraphs
+
+// Grid breakpoints
+
+// Grid containers
+
+// Grid columns
+
+// Container padding
+
+//
+// Components
+//
+
+// border-variables
+// border-radius-variables
+
+// box-shadow-variables
+
+// caret-variables
+
+// collapse-transition
+
+// aspect-ratios
+
+// Typography
+
+// Tables
+
+// Buttons + Forms
+
+// Buttons
+
+// Forms
+
+// Form validation
+
+// Z-index master list
+
+// Navs
+
+// Navbar
+
+// Dropdowns
+
+// Pagination
+
+// Placeholders
+
+// Cards
+
+// Accordion
+
+// Tooltips
+
+// Popovers
+
+// Toasts
+
+// Badges
+
+// Modals
+
+// Alerts
+
+// Progress bars
+
+// List group
+
+// Image thumbnails
+
+// Figures
+
+// Breadcrumbs
+
+// Carousel
+
+// Spinners
+
+// Close
+
+// Offcanvas
+
+// Code
+
+//
+// Layout Variables
+
+//
+// SIDEBAR
+//
+$sidebar-bg-alt : $black  !default;
+$sidebar-color-alt: $white  !default;
+$sidebar-boder-alt: $white  !default;
+
+// Sidebar link
+$sidebar-link-bg-alt : $gray-800  !default;
+$sidebar-link-color-alt : $white  !default;
+$sidebar-link-hover-bg-alt : $gray-800  !default;
+$sidebar-link-hover-color-alt : $black  !default;
+$sidebar-link-active-bg-alt : $white  !default;
+$sidebar-link-active-color-alt: $black  !default;
+
+// Sidebar dropdown
+$sidebar-dropdown-bg-alt : $gray-900  !default;
+$sidebar-dropdown-color-alt : $gray-300  !default;
+$sidebar-dropdown-hover-bg-alt : transparent !default;
+$sidebar-dropdown-hover-color-alt : $primary  !default;
+$sidebar-dropdown-active-bg-alt : transparent !default;
+$sidebar-dropdown-active-color-alt: $black  !default;
+
+// siebar logo
+$sidebar-logo-bg-alt : $black  !default;
+$sidebar-logo-color-alt: $white  !default;
+
+//footer
+$footer-bg-alt : #000 !default;
+$footer-color-alt: #fff !default;
+
+//navtop
+$navtop-bg-alt: #000 !default;
+$navtop-color-alt: #fff !default;

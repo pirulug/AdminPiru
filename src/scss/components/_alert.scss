@@ -13,3 +13,15 @@
 //   padding: 0.95rem;
 //   width: 100%;
 // }
+
+@include dark-mode () {
+
+  @each $color,
+  $value in $theme-colors-alt {
+    .alert-#{$color} {
+      color: color-yiq($value);
+      background-color: $value;
+      border-color: darken($value, 5%);
+    }
+  }
+}

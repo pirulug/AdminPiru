@@ -1,21 +1,15 @@
-// const purgecss = require("@fullhuman/postcss-purgecss");
+const purgecss = require("@fullhuman/postcss-purgecss");
 
 process.env.NODE_ENV === "production"
   ? (module.exports = {
       plugins: [
         require("autoprefixer"),
 
-        // purgecss({
-        //   content: ["./dist/*.html"],
-        // }),
+        purgecss({
+          content: ["./static/*.html"],
+        }),
       ],
     })
   : (module.exports = {
-      plugins: [
-        require("autoprefixer"),
-
-        // purgecss({
-        //   content: ["./dist/*.html"],
-        // }),
-      ],
+      plugins: [require("autoprefixer")],
     });

@@ -41,3 +41,23 @@
     height: 100%;
   }
 }
+
+@include dark-mode () {
+  .card {
+    background: #191C24;
+    color: $body-color-alt;
+    border-color: $gray-600;
+  }
+
+  .card-header {
+    background: #191C24;
+    color: $body-color-alt;
+    border-color: $gray-600;
+  }
+
+  .card-footer {
+    background: #191C24;
+    color: $body-color-alt;
+    border-color: $gray-600;
+  }
+}

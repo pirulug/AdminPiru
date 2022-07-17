@@ -18,6 +18,13 @@
   }
 }
 
+@include dark-mode () {
+  .footer {
+    background: #191C24;
+    color: $body-color-alt;
+  }
+}
+
 @include media-breakpoint-down(md) {
   .footer {
     margin-left: 0;

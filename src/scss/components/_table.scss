@@ -1,0 +1,9 @@
+@include dark-mode () {
+  .table {
+    color: $white;
+  }
+
+  .table-striped {
+    color: $gray-100;
+  }
+}

@@ -72,6 +72,14 @@
   }
 }
 
+// Dark mode
+@include dark-mode () {
+  .header {
+    background: #191C24;
+    color: $body-color-alt;
+  }
+}
+
 @include media-breakpoint-up(md) {
   .header {
     display: none;
