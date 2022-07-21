@@ -78,6 +78,17 @@
     background: #191C24;
     color: $body-color-alt;
   }
+
+  .header-logo {
+    color: $body-color-alt;
+    text-decoration: none;
+  }
+
+  .header-btn {
+    span {
+      background-color: $body-color-alt;
+    }
+  }
 }
 
 @include media-breakpoint-up(md) {

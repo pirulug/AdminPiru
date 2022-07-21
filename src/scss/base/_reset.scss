@@ -1,3 +1,8 @@
 // * {
 //   outline: solid 1px red;
 // }
+
+@include dark-mode () {
+  --bs-body-bg: #000;
+  --bs-body-color: #fff;
+}
